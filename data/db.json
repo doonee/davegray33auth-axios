@@ -1,0 +1,14 @@
+{
+  "members": [
+    {
+      "user": "aaaa",
+      "pwd": "1!qQ",
+      "id": 1
+    },
+    {
+      "user": "bbbb",
+      "pwd": "1@qW",
+      "id": 2
+    }
+  ]
+}

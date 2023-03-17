@@ -1,0 +1,38 @@
+{
+  "workbench.colorTheme": "Default Dark+" // Default Dark+, Solarized Light, Quiet Light
+  // "security.workspace.trust.untrustedFiles": "open",
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  // "editor.formatOnSave": true,
+  // "editor.formatOnPaste": true,
+  // "prettier.useEditorConfig": false,
+  // "prettier.printWidth": 80,
+  // "prettier.tabWidth": 2,
+  // "editor.fontSize": 16,
+  // "debug.console.fontSize": 15,
+  // "markdown.preview.fontSize": 15,
+  // "terminal.integrated.fontSize": 14,
+  // "liveServer.settings.donotShowInfoMsg": true,
+  // "explorer.confirmDelete": false,
+  // "explorer.confirmDragAndDrop": false,
+  // "editor.fontFamily": "D2Coding, Consolas, 'Courier New', monospace",
+  // "prettier.bracketSameLine": true,
+  // "javascript.updateImportsOnFileMove.enabled": "always",
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "vscode.typescript-language-features"
+  // },
+  // "editor.tabSize": 2,
+  // "editor.accessibilitySupport": "off",
+  // "workbench.startupEditor": "none",
+  // "git.confirmSync": false,
+  // "git.enableSmartCommit": true,
+  // "emmet.includeLanguages": {
+  //   "javascript": "javascriptreact"
+  // },
+  // "workbench.preferredDarkColorTheme": "Quiet Light",
+  // "workbench.preferredHighContrastColorTheme": "Quiet Light",
+  // "workbench.preferredLightColorTheme": "Quiet Light",
+  // "workbench.preferredHighContrastLightColorTheme": "Quiet Light",
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll": true
+  // }
+}
