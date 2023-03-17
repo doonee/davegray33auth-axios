@@ -2,7 +2,7 @@ import { useRef, useState, useEffect, useContext } from 'react';
 import AuthContext from "./context/AuthProvider";
 
 import axios from './api/axios';
-const LOGIN_URL = '/auth';
+const LOGIN_URL = '/user/signin';
 
 const Login = () => {
   const { setAuth } = useContext(AuthContext);
@@ -27,20 +27,24 @@ const Login = () => {
 
     try {
       const response = await axios.post(LOGIN_URL,
-        JSON.stringify({ user, pwd }),
+        JSON.stringify({ userId: user, userPass: pwd }),
         {
           headers: { 'Content-Type': 'application/json' },
           withCredentials: true
         }
       );
-      console.log(JSON.stringify(response?.data));
+      console.log(response?.data);
       //console.log(JSON.stringify(response));
-      const accessToken = response?.data?.accessToken;
-      const roles = response?.data?.roles;
-      setAuth({ user, pwd, roles, accessToken });
-      setUser('');
-      setPwd('');
-      setSuccess(true);
+      if (response?.data?.ok) {
+        const accessToken = response?.data?.result;
+        const roles = response?.data?.roles;
+        setAuth({ user, pwd, roles, accessToken });
+        setUser('');
+        setPwd('');
+        setSuccess(true);
+      } else {
+        setErrMsg(response?.data?.message)
+      }
     } catch (err) {
       if (!err?.response) {
         setErrMsg('No Server Response');
